@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>The Weekly American History Quiz</h2>
+    </header>
+    <nav class="main-nav">
+
+        <ul>
+            <li><a href="home.html" class="home">Home</a></li>
+            <li><a href="register.html" class="register">Register</a></li>
+            <li><a href="login.html" class="login">Login</a></li>
+            <li><a href="Play.html" class="play">Play</a></li>
+            <li><a href="Leaderboards.html" class="leaderboards">Leaderboards</a></li>
+            <li><a href="study.html" class="study">Study</a></li>
+
+        </ul>
+    </nav>
+    <br><br><br><br>
+
+
+    <div id="container">
+        <div id="start">Begin Quiz</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
